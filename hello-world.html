@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Hello world example</title>
+	</head>
+	<body>
+		<div id="app">
+			<h3>{{ message | capitalize }}</h3>
+		</div>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script type="text/javascript">
+			new Vue({
+				el: '#app',
+				data: { 
+					message: 'hello world!',
+				},
+				filters: {
+				   capitalize: function (value) {
+				     if (!value) return ''
+				     value = value.toString()
+				     return value.charAt(0).toUpperCase() + value.slice(1)
+				   }
+				 }
+			});
+		</script>
+	</body>
+</html>

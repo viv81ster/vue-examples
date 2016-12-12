@@ -1,0 +1,4 @@
+body {text-align: center;}
+.wrapper { width: 500px; margin: 0 auto; text-align: left;}
+.users li { margin: 10px 0px; padding: 5px; background-color: #f5f5dc; display: flex;}
+.users li img {width: 80px; height: 80px; margin-right: 10px}
